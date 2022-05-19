@@ -68,12 +68,12 @@ GRPCClient主要包括四个对服务端调用的接口，先后启动客户端�
 syntax = "proto3"; // 协议版本
 
 // 选项配置
-option java_package = "com.chuangqi.grpc.api";
+option java_package = "org.learn.grpc.api";
 option java_outer_classname = "RPCDateServiceApi";
 option java_multiple_files = true;
 
 // 定义包名
-package com.chuangqi.grpc.api;
+package org.learn.grpc.api;
 
 // 服务接口.定义请求参数和相应结果
 service RPCDateService {
@@ -109,13 +109,13 @@ message RPCDateResponseList {
 
 # 编写实现类
 
-**src/main/java/com/chuangqi/service/RPCDateServiceImpl.java**
+**src/main/java/org/learn/service/RPCDateServiceImpl.java**
 
 # 定义服务端
 
-**src/main/java/com/chuangqi/GRPCServer.java**
+**src/main/java/org/learn/GRPCServer.java**
 
 # 定义客户端
 
-**src/main/java/com/chuangqi/GRPCClient.java**
+**src/main/java/org/learn/GRPCClient.java**
 
